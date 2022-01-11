@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[lfs]
+	repositoryformatversion = 0
+[merge "unityyamlmerge"]
+	name = Unity SmartMerge (UnityYamlMerge)
+	driver = 'C:/Program Files/Unity/Editor/Data/Tools/UnityYAMLMerge.exe' merge -h -p --force --fallback none %O %B %A %A
+	recursive = binary
+
+[remote "origin"]
+	url = https://github.com/kodesoundsystem/city.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
